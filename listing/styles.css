@@ -1,0 +1,204 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #4CAF50; /* Green color for the heading */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 50px auto; /* Center the container */
+    background: #fff; /* White background for the form */
+    padding: 20px; /* Padding around the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Search bar styles */
+.search-bar {
+    margin-bottom: 10px; /* Space below search bar */
+    position: relative; /* Relative position for icon */
+}
+
+.search-bar input {
+    width: calc(100% - 30px); /* Full width minus space for icon */
+    padding: 6px; /* Reduced padding for input */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border */
+    font-size: 12px; /* Reduced font size for input */
+}
+
+.filter-icon {
+    position: absolute; /* Absolute position for icon */
+    right: 10px; /* Positioning */
+    top: 6px; /* Adjust top positioning */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Reduce icon size */
+    color: #4CAF50; /* Optional: Add color to the icon/text */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Adjust margin for a smaller modal */
+    padding: 5px; /* Further reduce padding for the content */
+    border: 1px solid #888;
+    width: 30%; /* Adjust width for a more compact modal */
+    border-radius: 5px; /* Add slight rounding to the modal */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 18px; /* Slightly smaller close button */
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Category Section Styles */
+.category-section {
+    margin-bottom: 20px; /* Space below each category section */
+    padding: 10px; /* Padding around the category section */
+    border-bottom: 2px solid green; /* Green line */
+}
+
+.category-section h2 {
+    margin-bottom: 10px; /* Space below section title */
+    color: #4CAF50; /* Green color for section titles */
+}
+
+/* Category card styles */
+.category-card {
+    border: 1px solid #ddd; /* Light border around each card */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px; /* Padding inside the card */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 5px 0; /* Space around each card */
+    transition: background-color 0.2s; /* Animation on hover */
+}
+
+.category-card:hover {
+    background-color: #e6ffe6; /* Light green background on hover */
+}
+
+/* Plant card styles */
+.plant-card {
+    border: 1px solid #ddd; /* Light border around each card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Reduced padding */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 8px; /* Space around each card */
+    transition: transform 0.2s; /* Animation on hover */
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color */
+    flex: 0 1 calc(33.33% - 20px); /* Adjust card width, with space between */
+    height: 400px; /* Fixed height for the card */
+    display: flex; /* Use flexbox for card layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space out items evenly */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.plant-card:hover {
+    transform: scale(1.02); /* Slightly grow on hover */
+}
+
+.plant-image {
+    width: 100%; /* Make the image responsive */
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 5px; /* Rounded image corners */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+/* Form styles */
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 4px; /* Space below labels */
+    font-weight: 600; /* Bold labels */
+    font-size: 12px; /* Smaller font size for labels */
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%; /* Full width for inputs */
+    padding: 6px; /* Reduced padding inside inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding in total width */
+    font-size: 12px; /* Smaller font size for inputs */
+}
+
+input[type="file"] {
+    border: none; /* Remove border for file input */
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Green background for submit button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 6px 10px; /* Smaller padding inside button */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Font size for button */
+    width: 100%; /* Full width for button */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Image block styling */
+img {
+    display: block; /* Block display for images */
+    margin: 20px auto; /* Center image with margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plant-card {
+        width: calc(50% - 20px); /* Two cards in a row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .plant-card {
+        width: 100%; /* One card in a row on very small screens */
+    }
+}
